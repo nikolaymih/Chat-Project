@@ -22,9 +22,13 @@ namespace ChatProjectRefactored
             this.welcomeMessage = welcomeMessage;
         }
 
-        public void ExecuteTcpListener()
+        public void ServerStartAndStop()
         {
             this.serverthread.Start();
+
+            StopServer stopServer = new StopServer();
+
+            stopServer.onExitEventHandler();
         }
 
         private void onServerStart()

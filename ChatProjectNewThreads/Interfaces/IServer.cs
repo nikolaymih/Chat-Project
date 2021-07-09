@@ -8,6 +8,6 @@ namespace ChatProjectRefactored.Interfaces
 {
     interface IServer
     {
-        void ExecuteTcpListener();
+        void ServerStartAndStop();
     }
 }

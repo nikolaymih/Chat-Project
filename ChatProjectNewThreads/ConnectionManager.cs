@@ -48,7 +48,6 @@ namespace ChatProjectRefactored
                     byte[] b = Encoding.ASCII.GetBytes("We are very sorry but the server has reached its maximum users. Please try again later :(");
                     client.GetStream().Write(b, 0, b.Length);
 
-                    Thread.CurrentThread.Interrupt();
                     Console.WriteLine("Client (Thread: {0}): Terminated!\n", Thread.CurrentThread.ManagedThreadId);
                     
                     Task.Delay(5000).ContinueWith(t => client.Close());

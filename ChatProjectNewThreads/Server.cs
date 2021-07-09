@@ -40,7 +40,6 @@ namespace ChatProjectRefactored
             IConnectionManager handleConnection = new ConnectionManager(maxConnections, welcomeMessage, tcpListener);
             
             handleConnection.OnSocketReceive();
-            
         }
     }
 }

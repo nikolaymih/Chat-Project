@@ -2,7 +2,7 @@
   "profiles": {
     "ChatProjectNewThreads": {
       "commandName": "Project",
-      "commandLineArgs": "-n 1 -m \"Welcome to Chat Server\""
+      "commandLineArgs": "-n 103 -m \"Welcome to Chat Server\""
     }
   }
 }
